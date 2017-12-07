@@ -18,10 +18,10 @@ ReactDOM.render(
     <BrowserRouter>
        <div>
          <Switch>
-           <Route path="/app" exact component={App}/>
+           <Route exact component={App}/>
            <Route path="/login" component={Login}/>
            <Route path="/register" component={Register}/>
-           <Redirect to="/app" component={App}/>
+           <Redirect to='/app' component={App}/>
          </Switch>
        </div>
     </BrowserRouter>
