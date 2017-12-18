@@ -10,7 +10,9 @@ import { addToDo } from '../../redux/action'
 class Header extends React.Component{
   constructor(props){
   	super(props);
-  	this.state = {};
+  	this.state = {
+      newAdd: ''
+    };
   }
   handleChange (k,v) {
     let values = v.target.value;
@@ -21,10 +23,7 @@ class Header extends React.Component{
   }
 
   handleAdd(){
-     console.log(this.state.newAdd)
-     let text = [];
-     text.push(this.state.newAdd)
-     this.props.addToDo(text)
+     this.props.addToDo(this.state)
   }
 
   render(){

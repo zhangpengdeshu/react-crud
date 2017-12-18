@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { Collapse, Row, Col, Button } from 'antd';
+import { connect } from 'react-redux'
 /*
  * @class ListTodoMemos `新建事项`组件
  */
+@connect(
+  state => state.todoList,
+  null
+)
 class ListTodo extends Component {
   render() {
+    console.log(this.props)
     const collapseStyle = {
         width: '100%',
         maxWidth: '800px',
