@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import Navigation from '../components/Navigation'
 import ListTodo from '../components/ListTodo'
 import ListDoing from '../components/ListDoing'
@@ -19,6 +19,7 @@ class App extends React.Component{
             <Route path="/app/todo" component={ListTodo}/>
             <Route path="/app/doing" component={ListDoing}/>
             <Route path="/app/done" component={ListDone}/>
+            <Redirect to="/app" component={AllList}/>
         </Switch>
       </div>
     )

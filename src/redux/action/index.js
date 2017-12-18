@@ -5,6 +5,7 @@ export const CHANGE_DONE_TO_DOING = 'CHANGE_DONE_TO_DOING'
 export const CHANGE_DOING_TO_TODO = 'CHANGE_DOING_TO_TODO'
 
 export function addToDo(text){
+  console.log(text)
   return {
     type: ADD_TODO,
     text

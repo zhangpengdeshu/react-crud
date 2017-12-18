@@ -1,2 +1,5 @@
 import { combineReducers } from 'redux'
-export default combineReducers({})
+import { todoList } from './redux/reducer'
+export default combineReducers({
+  todoList
+})

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Collapse, Row, Col, Icon, Button } from 'antd';
+import { Collapse, Row, Col, Button } from 'antd';
 /*
  * @class ListTodoMemos `新建事项`组件
  */
